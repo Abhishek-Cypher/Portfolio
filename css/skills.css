@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    background-image: url('skillsbg.svg');
+    background-size: cover;
+}
+#skillscontainer{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    height: 90vh;
+    width: 95vw;
+    /* margin: 0 auto; */
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.img{
+    height: 18vh;
+    width: auto;
+    transition: all 0.25s;
+}
+.img:hover{
+    transform: scale(1.5);
+    transition: all 0.25s;
+}
+
+/* NAVBAR */
+#navbar{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 7vh;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#items{
+    margin: auto 1rem;
+}
+#navul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+}
+#logo{
+    margin: auto 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+}
+
+.navit{
+    text-decoration: none;
+    color: black;
+    margin: 1rem 1rem;
+}
+.navit:hover{
+    color: gray;
+}
+
+#emojis{
+    margin: auto 0;
+    margin-left: 15vw;
+}
+
+#emojis span{
+    font-size: 2rem;
+    display: none;
+}
+#navbar{ 
+    transform: translateY(-100%); /* normal, hidden state */
+    transition: all 0.25s;
+}
+
+#navbar-container:hover #navbar {
+    transform: translateY(0); /* when parent is hovered */
+    transition: all 0.25s;
+}

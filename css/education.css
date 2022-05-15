@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(13,17,23,255);
+}
+#education-container{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 85vh;
+}
+#timeline
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+#timeline ul
+{
+    list-style-type: none;
+    width: 20vw;
+}
+#timeline li{
+    margin: 15vh 5vw;
+    height: 2rem;
+}
+#timeline li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 3px;
+    transition: all 0.25s;
+}
+#timeline li a:hover
+{
+    color: gray;
+    font-size: larger;
+    transition: all 0.25s;
+}
+
+#edu-details
+{   
+    display: flex;
+    margin: auto 20vw;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40vw;
+    height: 60vh;
+}
+#mtdet
+{
+    display: none;
+}
+#btdet
+{
+    display: none;
+}
+#twedet
+{
+    display: none;
+}
+#tendet
+{
+    display: none;
+}
+.edudet h3
+{
+    margin-top: 1rem;
+}
+.edudet h2
+{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* NAVBAR */
+#navbar{
+    display: grid;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 7vh;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+#items{
+    margin: auto 1rem;
+}
+#navul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+}
+#logo{
+    margin: auto 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+}
+
+.navit{
+    text-decoration: none;
+    color: black;
+    margin: 1rem 1rem;
+}
+.navit:hover{
+    color: gray;
+}
+
+#emojis{
+    margin: auto 0;
+    margin-left: 15vw;
+}
+
+#emojis span{
+    font-size: 2rem;
+    display: none;
+}
+#navbar{ 
+    transform: translateY(-100%); /* normal, hidden state */
+    transition: all 0.25s;
+}
+
+#navbar-container:hover #navbar {
+    transform: translateY(0); /* when parent is hovered */
+    transition: all 0.25s;
+}
