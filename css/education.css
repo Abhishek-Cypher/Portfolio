@@ -80,10 +80,6 @@ body{
 {
     font-family: 'Josefin Sans', sans-serif;
 }
-#anim{
-    height: 60vh;
-    z-index: -1;
-}
 
 /* NAVBAR */
 #navbar{
