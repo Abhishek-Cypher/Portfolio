@@ -3,13 +3,13 @@
     padding: 0;
 }
 body{
-    background-color: rgba(13,17,23,255);
+    background-color: rgba(247,255,255,255);
 }
 #education-container{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: row;
-    color: white;
+    /* color: white; */
     height: 85vh;
 }
 #timeline
@@ -32,7 +32,6 @@ body{
 #timeline li a
 {
     text-decoration: none;
-    color: white;
     font-size: 1rem;
     padding-bottom: 3px;
     transition: all 0.25s;
@@ -52,6 +51,10 @@ body{
     justify-content: flex-start;
     width: 40vw;
     height: 60vh;
+}
+#eduanim{
+    height: 60vh;
+    margin: auto auto;
 }
 #mtdet
 {
@@ -76,6 +79,10 @@ body{
 .edudet h2
 {
     font-family: 'Josefin Sans', sans-serif;
+}
+#anim{
+    height: 60vh;
+    z-index: -1;
 }
 
 /* NAVBAR */
