@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <!-- GRADIENTS CODES FROM =  -->
+    <!-- https://mycolor.space/gradient -->
+    <link rel="stylesheet" href="profiles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar-container">
+        <div id="navbar">
+          <div id="logo">
+            ABHISHEK DIXIT
+          </div>
+    
+          <div id="items">
+            <ul id="navul">
+              <li><a href="../index/index.html" id="navho" class="navit">Home</a></li>
+              <li><a href="../skills/skills.html" id="navsk" class="navit">Skills</a></li>
+              <li><a href="../education/education.html" id="naved" class="navit">Education</a></li>
+              <li><a href="../profiles/profiles.html" id="navpr" class="navit">Profiles</a></li>
+              <li><a href="../contact/contact.html" id="navco" class="navit">Contact Me</a></li>
+            </ul>
+          </div>
+    
+          <div id="emojis">
+            <span id="emoji1">🏠</span>
+            <span id="emoji2">🛠️</span>
+            <span id="emoji3">📚</span>
+            <span id="emoji4">💻</span>
+            <span id="emoji5">📱</span>
+          </div>
+    
+        </div>
+      </div>
+    
+      <script>
+        document.getElementById("navho").addEventListener("mouseover", mouseOver1);
+        document.getElementById("navho").addEventListener("mouseout", mouseOut1);
+        document.getElementById("navsk").addEventListener("mouseover", mouseOver2);
+        document.getElementById("navsk").addEventListener("mouseout", mouseOut2);
+        document.getElementById("naved").addEventListener("mouseover", mouseOver3);
+        document.getElementById("naved").addEventListener("mouseout", mouseOut3);
+        document.getElementById("navpr").addEventListener("mouseover", mouseOver4);
+        document.getElementById("navpr").addEventListener("mouseout", mouseOut4);
+        document.getElementById("navco").addEventListener("mouseover", mouseOver5);
+        document.getElementById("navco").addEventListener("mouseout", mouseOut5);
+    
+        function mouseOver1() {
+          document.getElementById("emoji1").style.display = "block";
+        }
+        function mouseOut1() {
+          document.getElementById("emoji1").style.display = "none";
+        }
+        function mouseOver2() {
+          document.getElementById("emoji2").style.display = "block";
+        }
+        function mouseOut2() {
+          document.getElementById("emoji2").style.display = "none";
+        }
+        function mouseOver3() {
+          document.getElementById("emoji3").style.display = "block";
+        }
+        function mouseOut3() {
+          document.getElementById("emoji3").style.display = "none";
+        }
+        function mouseOver4() {
+          document.getElementById("emoji4").style.display = "block";
+        }
+        function mouseOut4() {
+          document.getElementById("emoji4").style.display = "none";
+        }
+        function mouseOver5() {
+          document.getElementById("emoji5").style.display = "block";
+        }
+        function mouseOut5() {
+          document.getElementById("emoji5").style.display = "none";
+        }
+      </script>
+
+    <div id="profiles-container">
+
+        <div id="container1">
+        <a href="mailto:abhishek2000dixit2000@gmail.com" target="_blank" id="gm"><img src="gmail.png" alt="gmail" class="logo" id="gm1"></a>
+        <a href="https://www.linkedin.com/in/abhishekdixit2000/" target="_blank" id="li"><img src="linkedin.png" alt="linkedin" class="logo" id="li1"></a>
+        <a href="https://github.com/Abhishek-Cypher" target="_blank" id="gi"><img src="github.png" alt="github" class="logo" id="gi1"></a>
+        </div>
+
+        <div id="container2">
+        <a href="https://www.hackerrank.com/Abhishek_Cypher?hr_r=1" target="_blank" id="ha"><img src="hackerrank.png" alt="hackerrank" class="logo" id="ha1"></a>
+        <a href="https://leetcode.com/Abhishek_Cypher/" target="_blank" id="le"><img src="leetcode.png" alt="leetcode" class="logo" id="le1"></a>
+        <a href="https://codeforces.com/profile/abhishek_cypher" target="_blank" id="co"><img src="codeforces.png" alt="codeforces" class="logo" id="co1"></a>
+        </div>
+
+        <div id="bottom">
+            <h1 id="bot">You can find me at ☝️</h1>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("gm1").addEventListener("mouseover", mouseOver1);
+        document.getElementById("gm1").addEventListener("mouseout", mouseOut1);
+        document.getElementById("li1").addEventListener("mouseover", mouseOver2);
+        document.getElementById("li1").addEventListener("mouseout", mouseOut2);
+        document.getElementById("gi1").addEventListener("mouseover", mouseOver3);
+        document.getElementById("gi1").addEventListener("mouseout", mouseOut3);
+        document.getElementById("ha1").addEventListener("mouseover", mouseOver4);
+        document.getElementById("ha1").addEventListener("mouseout", mouseOut4);
+        document.getElementById("le1").addEventListener("mouseover", mouseOver5);
+        document.getElementById("le1").addEventListener("mouseout", mouseOut5);
+        document.getElementById("co1").addEventListener("mouseover", mouseOver6);
+        document.getElementById("co1").addEventListener("mouseout", mouseOut6);
+
+        function mouseOver1() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #eed4f1, #f1a3cb, #f1708a, #db4437)";
+        document.getElementById("bot").textContent = "👉 Gmail";
+        }
+        function mouseOut1() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)";
+        document.getElementById("bot").textContent = "You can find me at ☝️";
+        }
+        function mouseOver2() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #d6d7eb, #a7b2d8, #6e91c5, #0072b1)";
+        document.getElementById("bot").textContent = "👉 LinkedIn";
+        }
+        function mouseOut2() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)";
+        document.getElementById("bot").textContent = "You can find me at ☝️";
+        }
+        function mouseOver3() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #f7effb, #f7dcf0, #fcc9dd, #ffb6c1)";
+        document.getElementById("bot").textContent = "👉 GitHub";
+        }
+        function mouseOut3() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)";
+        document.getElementById("bot").textContent = "You can find me at ☝️";
+        }
+        function mouseOver4() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #d3f2ff, #6eeeff, #00e7d1, #47d66b)";
+        document.getElementById("bot").textContent = "👉 HackerRank";
+        }
+        function mouseOut4() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)";
+        document.getElementById("bot").textContent = "You can find me at ☝️";
+        }
+        function mouseOver5() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #ffe5ff, #ffc4d5, #ffb380, #f6be00)";
+        document.getElementById("bot").textContent = "👉 LeetCode";
+        }
+        function mouseOut5() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)";
+        document.getElementById("bot").textContent = "You can find me at ☝️";
+        }
+        function mouseOver6() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #ded1ff, #c4a1ff, #af6cfd, #a020f0)";
+        document.getElementById("bot").textContent = "👉 Codeforces";
+        }
+        function mouseOut6() {
+        // document.body.style.background = "radial-gradient(circle, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000)";
+        document.getElementById("bot").textContent = "You can find me at ☝️";
+        }
+    </script>
+</body>
+</html>

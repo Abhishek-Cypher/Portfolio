@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="education.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar-container">
+        <div id="navbar">
+          <div id="logo">
+            ABHISHEK DIXIT
+          </div>
+    
+          <div id="items">
+            <ul id="navul">
+              <li><a href="../index/index.html" id="navho" class="navit">Home</a></li>
+              <li><a href="../skills/skills.html" id="navsk" class="navit">Skills</a></li>
+              <li><a href="../education/education.html" id="naved" class="navit">Education</a></li>
+              <li><a href="../profiles/profiles.html" id="navpr" class="navit">Profiles</a></li>
+              <li><a href="../contact/contact.html" id="navco" class="navit">Contact Me</a></li>
+            </ul>
+          </div>
+    
+          <div id="emojis">
+            <span id="emoji1">🏠</span>
+            <span id="emoji2">🛠️</span>
+            <span id="emoji3">📚</span>
+            <span id="emoji4">💻</span>
+            <span id="emoji5">📱</span>
+          </div>
+    
+        </div>
+      </div>
+    
+      <script>
+        document.getElementById("navho").addEventListener("mouseover", mouseOver1);
+        document.getElementById("navho").addEventListener("mouseout", mouseOut1);
+        document.getElementById("navsk").addEventListener("mouseover", mouseOver2);
+        document.getElementById("navsk").addEventListener("mouseout", mouseOut2);
+        document.getElementById("naved").addEventListener("mouseover", mouseOver3);
+        document.getElementById("naved").addEventListener("mouseout", mouseOut3);
+        document.getElementById("navpr").addEventListener("mouseover", mouseOver4);
+        document.getElementById("navpr").addEventListener("mouseout", mouseOut4);
+        document.getElementById("navco").addEventListener("mouseover", mouseOver5);
+        document.getElementById("navco").addEventListener("mouseout", mouseOut5);
+    
+        function mouseOver1() {
+          document.getElementById("emoji1").style.display = "block";
+        }
+        function mouseOut1() {
+          document.getElementById("emoji1").style.display = "none";
+        }
+        function mouseOver2() {
+          document.getElementById("emoji2").style.display = "block";
+        }
+        function mouseOut2() {
+          document.getElementById("emoji2").style.display = "none";
+        }
+        function mouseOver3() {
+          document.getElementById("emoji3").style.display = "block";
+        }
+        function mouseOut3() {
+          document.getElementById("emoji3").style.display = "none";
+        }
+        function mouseOver4() {
+          document.getElementById("emoji4").style.display = "block";
+        }
+        function mouseOut4() {
+          document.getElementById("emoji4").style.display = "none";
+        }
+        function mouseOver5() {
+          document.getElementById("emoji5").style.display = "block";
+        }
+        function mouseOut5() {
+          document.getElementById("emoji5").style.display = "none";
+        }
+      </script>
+
+
+    <div id="education-container">
+        <div id="timeline">
+            <ul>
+            <li><a href="#"  id="mtech"><h3>MTech</h3></a></li>
+            <li><a href="#"  id="btech"><h3>BTech</h3></a></li>
+            <li><a href="#"  id="12"><h3>Class 12th</h3></a></li>
+            <li><a href="#"  id="10"><h3>Class 10th</h3></a></li> 
+            </ul>
+        </div>
+        <div id="edu-details">
+            <div id="anim">
+                <img src="animation.gif" alt="Animation">
+            </div>
+            <div id="mtdet" class="edudet">
+                <h2>Master of Technology</h2>
+                <h3>Year : 2022 - 2024</h3>
+                <h3>College Name</h3>
+                <h3>Location</h3>
+                <h3>Branch : Computer Science and Engineering</h3>
+                <h3>Grade : x / 10</h3>
+            </div>
+            <div id="btdet" class="edudet">
+                <h2>Bachelor of Technology</h2>
+                <h3>Year : 2018 - 2022</h3>
+                <h3>Jabalpur Engineering College</h3>
+                <h3>Jabalpur</h3>
+                <h3>Branch : Computer Science and Engineering</h3>
+                <h3>Grade : 8.27 / 10</h3>
+            </div>
+            <div id="twedet" class="edudet">
+                <h2>Class 12th</h2>
+                <h3>Year : 2017</h3>
+                <h3>Kendriya Vidyalaya</h3>
+                <h3>Mungaoli</h3>
+                <h3>Stream : Physics-Chemistry-Mathematics</h3>
+                <h3>Percentage : 95.6 %</h3>
+            </div>
+            <div id="tendet" class="edudet">
+                <h2>Class 10th</h2>
+                <h3>Year : 2015</h3>
+                <h3>Kendriya Vidyalaya</h3>
+                <h3>Mungaoli</h3>
+                <h3>Subjects : Science, Social Science, Mathematics</h3>
+                <h3>Grade : 10 / 10</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("mtech").addEventListener("click", mouseclick1);
+        document.getElementById("btech").addEventListener("click", mouseclick2);
+        document.getElementById("12").addEventListener("click", mouseclick3);
+        document.getElementById("10").addEventListener("click", mouseclick4);
+
+        function mouseclick1() {
+            document.getElementById("mtdet").style.display = "block";
+            document.getElementById("btdet").style.display = "none";
+            document.getElementById("twedet").style.display = "none";
+            document.getElementById("tendet").style.display = "none";
+            document.getElementById("anim").style.display = "none";
+            document.getElementById("mtech").style.fontSize = "larger";
+            document.getElementById("btech").style.fontSize = "initial";
+            document.getElementById("12").style.fontSize = "initial";
+            document.getElementById("10").style.fontSize = "initial";
+        }
+        function mouseclick2() {
+            document.getElementById("mtdet").style.display = "none";
+            document.getElementById("btdet").style.display = "block";
+            document.getElementById("twedet").style.display = "none";
+            document.getElementById("tendet").style.display = "none";
+            document.getElementById("anim").style.display = "none";
+            document.getElementById("mtech").style.fontSize = "initial";
+            document.getElementById("btech").style.fontSize = "larger";
+            document.getElementById("12").style.fontSize = "initial";
+            document.getElementById("10").style.fontSize = "initial";
+        }
+        function mouseclick3() {
+            document.getElementById("mtdet").style.display = "none";
+            document.getElementById("btdet").style.display = "none";
+            document.getElementById("twedet").style.display = "block";
+            document.getElementById("tendet").style.display = "none";
+            document.getElementById("anim").style.display = "none";
+            document.getElementById("mtech").style.fontSize = "initial";
+            document.getElementById("btech").style.fontSize = "initial";
+            document.getElementById("12").style.fontSize = "larger";
+            document.getElementById("10").style.fontSize = "initial";
+        }
+        function mouseclick4() {
+            document.getElementById("mtdet").style.display = "none";
+            document.getElementById("btdet").style.display = "none";
+            document.getElementById("twedet").style.display = "none";
+            document.getElementById("tendet").style.display = "block";
+            document.getElementById("anim").style.display = "none";
+            document.getElementById("mtech").style.fontSize = "initial";
+            document.getElementById("btech").style.fontSize = "initial";
+            document.getElementById("12").style.fontSize = "initial";
+            document.getElementById("10").style.fontSize = "larger";
+        }
+    </script>
+</body>
+</html>

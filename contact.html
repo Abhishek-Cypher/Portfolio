@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+    <script type="module" src="https://unpkg.com/friendly-challenge@0.9.2/widget.module.min.js" async defer></script>
+    <script nomodule src="https://unpkg.com/friendly-challenge@0.9.2/widget.min.js" async defer></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar-container">
+        <div id="navbar">
+          <div id="logo">
+            ABHISHEK DIXIT
+          </div>
+    
+          <div id="items">
+            <ul id="navul">
+              <li><a href="../index/index.html" id="navho" class="navit">Home</a></li>
+              <li><a href="../skills/skills.html" id="navsk" class="navit">Skills</a></li>
+              <li><a href="../education/education.html" id="naved" class="navit">Education</a></li>
+              <li><a href="../profiles/profiles.html" id="navpr" class="navit">Profiles</a></li>
+              <li><a href="../contact/contact.html" id="navco" class="navit">Contact Me</a></li>
+            </ul>
+          </div>
+    
+          <div id="emojis">
+            <span id="emoji1">🏠</span>
+            <span id="emoji2">🛠️</span>
+            <span id="emoji3">📚</span>
+            <span id="emoji4">💻</span>
+            <span id="emoji5">📱</span>
+          </div>
+    
+        </div>
+      </div>
+    
+      <script>
+        document.getElementById("navho").addEventListener("mouseover", mouseOver1);
+        document.getElementById("navho").addEventListener("mouseout", mouseOut1);
+        document.getElementById("navsk").addEventListener("mouseover", mouseOver2);
+        document.getElementById("navsk").addEventListener("mouseout", mouseOut2);
+        document.getElementById("naved").addEventListener("mouseover", mouseOver3);
+        document.getElementById("naved").addEventListener("mouseout", mouseOut3);
+        document.getElementById("navpr").addEventListener("mouseover", mouseOver4);
+        document.getElementById("navpr").addEventListener("mouseout", mouseOut4);
+        document.getElementById("navco").addEventListener("mouseover", mouseOver5);
+        document.getElementById("navco").addEventListener("mouseout", mouseOut5);
+    
+        function mouseOver1() {
+          document.getElementById("emoji1").style.display = "block";
+        }
+        function mouseOut1() {
+          document.getElementById("emoji1").style.display = "none";
+        }
+        function mouseOver2() {
+          document.getElementById("emoji2").style.display = "block";
+        }
+        function mouseOut2() {
+          document.getElementById("emoji2").style.display = "none";
+        }
+        function mouseOver3() {
+          document.getElementById("emoji3").style.display = "block";
+        }
+        function mouseOut3() {
+          document.getElementById("emoji3").style.display = "none";
+        }
+        function mouseOver4() {
+          document.getElementById("emoji4").style.display = "block";
+        }
+        function mouseOut4() {
+          document.getElementById("emoji4").style.display = "none";
+        }
+        function mouseOver5() {
+          document.getElementById("emoji5").style.display = "block";
+        }
+        function mouseOut5() {
+          document.getElementById("emoji5").style.display = "none";
+        }
+      </script>
+
+
+    <div id="contact">
+        <div id="form">
+            <h1>Contact Me</h1>
+            <form action="https://formsubmit.co/3af23304db35025e8f400d5481e02c15" method="post">
+                <div><input name="name" input type="text" required placeholder="Enter your name"></div>
+                <div><input name="phone" type="phone" required placeholder="Enter your phone number"></div>
+                <div><input name="email" type="email" required placeholder="Enter your email"></div>
+                <div><input name="message" type="text" required placeholder="Enter your message"></div>
+
+                <div id="captcha">
+                    <div class="frc-captcha" data-sitekey="FCMV995O03V7RIMQ"></div>
+                </div>
+                <div id="buttons">
+                    <button id="submit" class="btn" type="submit">Submit</button>
+                    <button id="reset" class="btn" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div id="contactanim">
+            <img src="contactanim.gif" alt="" id="animationcontact">
+        </div>
+    </div>
+</body>
+</html>
