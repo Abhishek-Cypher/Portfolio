@@ -83,7 +83,11 @@
       </script>
 
 
-
+    <div id='spinner-wrapper'>
+        <div id="loadingimg">
+          <img src="img/loading.gif"></img>
+        </div>
+      </div>
 
     <div id="home-container">
         <div id="home-text">
@@ -97,5 +101,23 @@
     <div id="home-bottom">
         <h2>Click on the Navbar items to know more about me!</h2>
     </div>
+    
+    <script>
+    // LOADING ANIMATION
+    let spinnerWrapper = document.getElementById('spinner-wrapper');
+
+    window.addEventListener('DOMContentLoaded', function () {
+      var delayInMilliseconds = 1000; //1 second
+
+      setTimeout(function () {
+        //your code to be executed after 1 second
+        spinnerWrapper.style.display = 'none';
+      }, delayInMilliseconds);
+
+
+      //spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+    });
+  </script>
+    
 </body>
 </html>
